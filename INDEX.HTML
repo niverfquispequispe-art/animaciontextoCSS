@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Instituto de Educación Superior Público de Yunguyo</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ESTILOS.CSS">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#">
+          <img src="logo.png" alt="Logo IESP Yunguyo" class="logo">
+        </a>
+        <div class="brand-text">
+          <h1>IESP Yunguyo</h1>
+          <p>Instituto de Educación Superior Público</p>
+        </div>
+      </div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#carreras">Carreras</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h2>Formando profesionales para el desarrollo local</h2>
+          <p>Bienvenidos al Instituto de Educación Superior Público de Yunguyo — excelencia académica, valores y compromiso social.</p>
+          <div class="hero-cta">
+            <a href="#carreras" class="btn">Nuestras carreras</a>
+            <a href="#contacto" class="btn btn-outline">Contáctanos</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="img.portada.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section container">
+      <h3 class="section-title">Sobre el instituto</h3>
+      <div class="grid-2">
+        <div>
+          <p>El Instituto de Educación Superior Público de Yunguyo ofrece formación técnica y profesional para estudiantes de la región. Contamos con docentes calificados, infraestructura adecuada y programas actualizados para el mercado laboral.</p>
+          <ul class="features">
+            <li>Programas técnicos y profesionales</li>
+            <li>Prácticas en empresas locales</li>
+            <li>Actividades de investigación y extensión</li>
+          </ul>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <strong>8+</strong>
+            <span>Carreras</span>
+          </div>
+          <div class="stat">
+            <strong>1200+</strong>
+            <span>Estudiantes</span>
+          </div>
+          <div class="stat">
+            <strong>80+</strong>
+            <span>Docentes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARRERAS -->
+    <section id="carreras" class="section alt-bg">
+      <div class="container">
+        <h3 class="section-title">Carreras y programas</h3>
+        <div class="cards">
+          <article class="card">
+            <img src="img.apsti.png" alt="Program 1">
+            <h4>Arquitectura de Plataformas y Servicios Informatica</h4>
+            <p>Formación práctica en desarrollo de software, redes y mantenimiento.</p>
+            <a class="card-link" href="#">Ver más</a>
+          </article>
+
+          <article class="card">
+            <img src="img.enfermeria tecnica.png" alt="Program 2">
+            <h4>Enfermeria Tecnica</h4>
+            <p>Gestión turística y servicios para el desarrollo local.</p>
+            <a class="card-link" href="#">Ver más</a>
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTICIAS / SLIDER -->
+    <section id="noticias" class="section container">
+      <h3 class="section-title">Noticias y eventos</h3>
+      <div class="news-slider" aria-live="polite">
+        <button class="prev" aria-label="Anterior">&lt;</button>
+        <div class="slides">
+          <article class="slide active">
+            <h4>Inscripciones abiertas 2026</h4>
+            <p>Abrimos proceso de admisión para el ciclo 2026 — revisa requisitos y calendario.</p>
+            <a href="#">Leer más</a>
+          </article>
+          <article class="slide">
+            <h4>Feria de empleo regional</h4>
+            <p>Participa en la feria que reunirá a empresas locales y nuestros egresados.</p>
+            <a href="#">Leer más</a>
+          </article>
+          <article class="slide">
+            <h4>Convenio con empresas</h4>
+            <p>Acuerdos de prácticas y pasantías con empresas del sector turístico y tecnológico.</p>
+            <a href="#">Leer más</a>
+          </article>
+        </div>
+        <button class="next" aria-label="Siguiente">&gt;</button>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section alt-bg">
+      <div class="container">
+        <h3 class="section-title">Contacto</h3>
+        <div class="grid-2">
+          <form id="contact-form" class="contact-form" action="#" method="post" onsubmit="return false;">
+            <label>Nombre
+              <input type="text" name="nombre" required>
+            </label>
+            <label>Correo
+              <input type="email" name="email" required>
+            </label>
+            <label>Asunto
+              <input type="text" name="asunto">
+            </label>
+            <label>Mensaje
+              <textarea name="mensaje" rows="4" required></textarea>
+            </label>
+            <button type="submit" class="btn" id="sendBtn">Enviar mensaje</button>
+          </form>
+
+          <div class="contact-info">
+            <p><strong>Dirección:</strong> Av. Principal N° 123, Yunguyo</p>
+            <p><strong>Teléfono:</strong> (+51) 9XX XXX XXX</p>
+            <p><strong>Email:</strong> info@iespyunguyo.edu.pe</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3855.123456789012!2d-69.09999999999999!3d-16.25000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2sInstituto%20de%20Educaci%C3%B3n%20Superior%20P%C3%BAblico%20de%20Yunguyo!5e0!3m2!1ses!2spe!4v1733250000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>© <span id="year"></span> IESP Yunguyo — Todos los derechos reservados</p>
+      </div>
+      <div class="social">
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">TW</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="ESTILOS.JS"></script>
+</body>
+</html>
